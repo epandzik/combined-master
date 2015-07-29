@@ -4,11 +4,8 @@ http://www.techrepublic.com/blog/web-designer/how-to-use-the-css-clip-and-mask-p
 http://codepen.io/SahAssar/pen/YPWxWX
 */
 @media only screen and (max-device-width: 480px) {
-    video {
+    #header {
         display: none;
-    }
-    #overlay {
-        background-color: #000;
     }
 }
 

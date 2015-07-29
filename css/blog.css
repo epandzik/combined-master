@@ -3,7 +3,7 @@ http://commons.oreilly.com/wiki/index.php/SVG_Essentials/Clipping_and_Masking
 http://www.techrepublic.com/blog/web-designer/how-to-use-the-css-clip-and-mask-properties/
 http://codepen.io/SahAssar/pen/YPWxWX
 */
-@media only screen and (min-device-width: 801px) {
+@media only screen and (max-device-width: 480px) {
     video {
         display: none;
     }
@@ -11,8 +11,6 @@ http://codepen.io/SahAssar/pen/YPWxWX
         background-color: #000;
     }
 }
-
-
 
 body {
     margin: 0;

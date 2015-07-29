@@ -3,6 +3,17 @@ http://commons.oreilly.com/wiki/index.php/SVG_Essentials/Clipping_and_Masking
 http://www.techrepublic.com/blog/web-designer/how-to-use-the-css-clip-and-mask-properties/
 http://codepen.io/SahAssar/pen/YPWxWX
 */
+@media only screen and (min-device-width: 801px) {
+    video {
+        display: none;
+    }
+    #overlay {
+        background-color: #000;
+    }
+}
+
+
+
 body {
     margin: 0;
 }

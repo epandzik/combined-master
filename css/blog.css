@@ -1,0 +1,61 @@
+/*
+http://commons.oreilly.com/wiki/index.php/SVG_Essentials/Clipping_and_Masking
+http://www.techrepublic.com/blog/web-designer/how-to-use-the-css-clip-and-mask-properties/
+http://codepen.io/SahAssar/pen/YPWxWX
+*/
+body {
+    margin: 0;
+}
+
+video {
+    position:relative;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:auto;
+}
+
+#overlay {
+    position:absolute;
+    left:0px;
+    width:100%;
+    height:auto;
+    z-index:49;
+    border-bottom: 1px solid #fff;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.75em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.5em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.25em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;    
+	color:#000;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+    padding-bottom: 1.705%;
+    font-size: 1em;
+}

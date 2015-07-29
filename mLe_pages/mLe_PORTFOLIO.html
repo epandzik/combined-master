@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Add my CSS -->
+    <link rel="stylesheet" href="../css/mLeSTYLE.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">    
+
+    <!-- trying to set up small thumbnails below full image in fancybox, http://jsfiddle.net/kevin11189/uZCC6/1270/ -->
+    <script src="../js/fancybox.js" type="text/javascript"></script>
+
+    <!-- Add fancybox CSS -->
+    <link rel="stylesheet" href="../css/fancyboxCSS.css" type="text/css" media="screen" />
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery1.8.3.js"></script>
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery-1.10.1.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="../assets/fancybox_source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-buttons.js"></script>
+
+    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.js"></script>
+
+    <!--script for sticky nav bar-->
+    <script type="text/javascript" src="../js/mLeSticky.js"></script>
+    <script src="../js/mobile.js" type="text/javascript"></script>
+<title>m.L.e. PORTFOLIO</title>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            helpers : {
+                title: {
+                    type: 'outside',
+                    position: 'bottom'
+                }
+            },
+            nextEffect: 'fade',
+            prevEffect: 'fade'
+        });
+    });
+</script>
+
+<div id="masthead">
+    <img src="../assets/mLe_GIFnoLoop.gif" alt="m.L.e. DESIGNS">
+</div>
+<nav>
+    <ul class="navList">
+        <li><a href="../mLeDESIGNS.html">Home</a></li>
+        <li><a href="mLe_PORTFOLIO.html">Portfolio</a></li>
+        <li><a href="mLe_ABOUT.html">About</a></li>
+        <li><a href="mLe_BLOG.html">Blog</a></li>
+        <li><a href="mLe_SAMPLE.html">Sample</a></li>
+        <li><a href="mLe_PROJECT.html">Project</a></li>
+        <li><a href="mLe_CONTACT.html">Contact</a></li>
+    </ul>
+</nav>
+<nav>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>      
+<div class="responsive-menu">
+        <ul>
+            <li><a href="../mLeDESIGNS.html">Home</a></li>
+            <li><a href="mLe_PORTFOLIO.html">Portfolio</a></li>
+            <li><a href="mLe_ABOUT.html">About</a></li>
+            <li><a href="mLe_BLOG.html">Blog</a></li>
+            <li><a href="mLe_SAMPLE.html">Sample</a></li>
+            <li><a href="mLe_PROJECT.html">Project</a></li>
+            <li><a href="mLe_CONTACT.html">Contact</a></li>
+        </ul>
+</div>
+</div>    
+</nav>
+<h1>This is my portfolio.</h1>
+<h2>This is a subhead.</h2>
+<p>Trying to get the padding between the thumbnails to change as the window resizes. Using resizeThumbs.js as the event handler. Set it up so the far right image is a different class than the other three in a row. The row is its own div.</p>
+<div id="thumbsContainer">    
+    <div id="alignRow1">
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Cover illustrating the feature of the magazine." href="../assets/ImageLibrary/FullSize/cellCover1.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/cellCover1_thumb200x200.jpg" alt="Cell Magazine Cover" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Cover illustrating the feature of the magazine." href="../assets/ImageLibrary/FullSize/cellCover2.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/cellCover2_thumb200x200.jpg" alt="Cell Magazine Cover 2"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Photograph showing the package and it's contents." href="../assets/ImageLibrary/FullSize/fafFull.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafFull_thumb200x200.jpg" alt="Fix-A-Flat, full" /></a>
+            </div>         
+        </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Shows the exterior of the package." href="../assets/ImageLibrary/FullSize/fafOuter.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafOuter_thumb200x200.jpg" alt="Fix-A-Flat, outer"/></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Close up of the typography of the package." href="../assets/ImageLibrary/FullSize/fafTop.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafTop_thumb200x200.jpg" alt="Fix-A-Flat, top"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Party invitation, showing it closed as it arrives." href="../assets/ImageLibrary/FullSize/inviteClosed.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/inviteClosed_thumb200x200.jpg" alt="Party Invite, closed"/></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Party invitation after it has been opened." href="../assets/ImageLibrary/FullSize/inviteShadow.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/inviteShadow_thumb200x200.jpg" alt="Party Invite, open and casting shadow"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show 2008 poster." href="../assets/ImageLibrary/FullSize/pbsPoster.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsPoster_thumb200x200.jpg" alt="2008 Poster"/></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show 2009 Save the Date postcard." href="../assets/ImageLibrary/FullSize/pbsPostcard.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsPostcard_thumb200x200.jpg" alt="2009 Save the Date Postcard"/></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show Logo" href="../assets/ImageLibrary/FullSize/pbsLogo.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsLogo_thumb200x200.jpg" alt="Vector Logo"/></a>
+                </div>
+            </div>
+    </div>
+    <div id="alignRow2">
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Active Body and Chiropractic Logo" href="../assets/ImageLibrary/FullSize/abcLogo.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/abcLogo_thumb200x200.jpg" alt="Chiropractic Logo" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                 <a class="fancybox" rel="group" title="Wedding Invitation" href="../assets/ImageLibrary/FullSize/weddinginvite.jpg">
+                     <img src="../assets/ImageLibrary/Thumbs200x200/weddingInvite_thumb200x200.jpg" alt="Wedding Invitation" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Pantone Colors" href="../assets/ImageLibrary/FullSize/ssPMS.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/ssPMS_thumb200x200.jpg" alt="Airline Logo, Color" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Black and White" href="../assets/ImageLibrary/FullSize/ssBW.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssBW_thumb200x200.jpg" alt="Airline Logo, Monochrome" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Reversed" href="../assets/ImageLibrary/FullSize/ssReversed.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssReversed_thumb200x200.jpg" alt="Airline Logo, Reversed" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Home Page" href="../assets/ImageLibrary/FullSize/ssWeb.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssWeb_thumb200x200.jpg" alt="Airline Home Page" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Robert Jacobs, OD — Logo" href="../assets/ImageLibrary/FullSize/rjoLogo.jpeg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/rjoLogo200x200.jpg" alt="Developmental Optometry Logo" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Robert Jacobs, OD — Business Card" href="../assets/ImageLibrary/FullSize/rjoBuscard.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/rjoBuscard_thumb200x200.jpg" alt="Developmental Optometry Business Card" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Robert Jacobs, OD — Home Page" href="../assets/ImageLibrary/FullSize/rjoWeb.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/rjoWeb_thumb200x200.jpg" alt="Developmental Optometry Home Page" /></a>
+                </div>
+            </div>
+    </div>
+    <div id="alignRow3">
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Oregon Health Sciences University HPV Vaccine Poster" href="../assets/ImageLibrary/FullSize/ohsuPoster.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/ohsuPoster_thumb200x200.jpg" alt="OHSU Vaccine Poster" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Book Design Series, All Pieces" href="../assets/ImageLibrary/FullSize/seriesAll.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/seriesAll_thumb200x200.jpg" alt="Book Series, All Pieces" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Book Design Series, Book Box" href="../assets/ImageLibrary/FullSize/seriesBox.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/seriesBox_thumb200x200.jpg" alt="Book Series, Box" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Book Design Series, Macro of Owl" href="../assets/ImageLibrary/FullSize/seriesOwl.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/seriesOwl_thumb200x200.jpg" alt="Book Series, Close-Up" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="SMYRC Poster" href="../assets/ImageLibrary/FullSize/smyrc.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/smyrc_thumb200x200.jpg" alt="Non-Profit PR Poster, All" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="SMYRC Poster, Close-Up" href="../assets/ImageLibrary/FullSize/smyrcAll.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/smyrcAll_thumb200x200.jpg" alt="Non-Profit PR Poster, Close-Up" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Futura Type Poster, Close-Up" href="../assets/ImageLibrary/FullSize/typeSpiral.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/typeSpiral_thumb200x200.jpg" alt="Futura Type Poster, Close-Up" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Futura Type Poster" href="../assets/ImageLibrary/FullSize/typePoster.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/typePoster_thumb200x200.jpg" alt="Futura Type Poster" /></a>
+                </div>
+        </div>
+    </div>
+</div>    
+<h3>I really need to work on the text</h3>
+<p>I'll probably need to enlarge the thumbnails, annoying as that will be. Though now that I've got the navBar to resize,
+    I need to make the thumbs do that as well. <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices est sem, sit
+    amet feugiat quam feugiat pellentesque. Pellentesque vitae justo in turpis ultrices suscipit
+    id quis tortor. Vestibulum arcu lacus, luctus eget tortor ut, lobortis laoreet nunc. Donec
+    vitae vulputate arcu, ac tincidunt erat.Vivamus quis libero dolor. Praesent tempor lacinia
+    tortor, ut lacinia purus efficitur quis. Maecenas consequat placerat turpis, non gravida
+    massa ornare ac. Ut eget metus vehicula, euismod magna at, sagittis quam. Vivamus finibus
+    facilisis mauris, sit amet mollis odio venenatis eget. Praesent velit tortor, tristique quis
+    viverra et, sodales et nisi. Donec posuere elit id tellus ornare convallis. Nulla odio
+    turpis, tempor in aliquam in, volutpat eget est.<br>Mauris placerat nisl in nunc
+    venenatis bibendum. Fusce faucibus posuere eros. Aliquam aliquet nisl sed velit finibus
+    tristique. Sed sit amet erat quis nunc rhoncus convallis. Pellentesque a quam at arcu
+    semper vulputate. Fusce dictum odio non tellus egestas dictum. Sed in libero at est
+    consequat feugiat. Quisque pulvinar orci ac bibendum finibus. Suspendisse ullamcorper
+    ultricies eros, et mollis nibh faucibus ut. Donec sed bibendum quam, eu feugiat dolor.
+    Integer ac finibus tortor. Quisque sapien orci, pellentesque a odio ut, sagittis tincidunt
+    metus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices est sem, sit
+    amet feugiat quam feugiat pellentesque. Pellentesque vitae justo in turpis ultrices suscipit
+    id quis tortor. Vestibulum arcu lacus, luctus eget tortor ut, lobortis laoreet nunc. Donec
+    vitae vulputate arcu, ac tincidunt erat.Vivamus quis libero dolor. Praesent tempor lacinia
+    tortor, ut lacinia purus efficitur quis. Maecenas consequat placerat turpis, non gravida
+    massa ornare ac. Ut eget metus vehicula, euismod magna at, sagittis quam. Vivamus finibus
+    facilisis mauris, sit amet mollis odio venenatis eget. Praesent velit tortor, tristique quis
+    viverra et, sodales et nisi. Donec posuere elit id tellus ornare convallis. Nulla odio
+    turpis, tempor in aliquam in, volutpat eget est.<br>Mauris placerat nisl in nunc
+    venenatis bibendum. Fusce faucibus posuere eros. Aliquam aliquet nisl sed velit finibus
+    tristique. Sed sit amet erat quis nunc rhoncus convallis. Pellentesque a quam at arcu
+    semper vulputate. Fusce dictum odio non tellus egestas dictum. Sed in libero at est
+    consequat feugiat. Quisque pulvinar orci ac bibendum finibus. Suspendisse ullamcorper
+    ultricies eros, et mollis nibh faucibus ut. Donec sed bibendum quam, eu feugiat dolor.
+    Integer ac finibus tortor. Quisque sapien orci, pellentesque a odio ut, sagittis tincidunt
+    metus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices est sem, sit
+    amet feugiat quam feugiat pellentesque. Pellentesque vitae justo in turpis ultrices suscipit
+    id quis tortor. Vestibulum arcu lacus, luctus eget tortor ut, lobortis laoreet nunc. Donec
+    vitae vulputate arcu, ac tincidunt erat.Vivamus quis libero dolor. Praesent tempor lacinia
+    tortor, ut lacinia purus efficitur quis. Maecenas consequat placerat turpis, non gravida
+    massa ornare ac. Ut eget metus vehicula, euismod magna at, sagittis quam. Vivamus finibus
+    facilisis mauris, sit amet mollis odio venenatis eget. Praesent velit tortor, tristique quis
+    viverra et, sodales et nisi. Donec posuere elit id tellus ornare convallis. Nulla odio
+    turpis, tempor in aliquam in, volutpat eget est.<br>Mauris placerat nisl in nunc
+    venenatis bibendum. Fusce faucibus posuere eros. Aliquam aliquet nisl sed velit finibus
+    tristique. Sed sit amet erat quis nunc rhoncus convallis. Pellentesque a quam at arcu
+    semper vulputate. Fusce dictum odio non tellus egestas dictum. Sed in libero at est
+    consequat feugiat. Quisque pulvinar orci ac bibendum finibus. Suspendisse ullamcorper
+    ultricies eros, et mollis nibh faucibus ut. Donec sed bibendum quam, eu feugiat dolor.
+    Integer ac finibus tortor. Quisque sapien orci, pellentesque a odio ut, sagittis tincidunt
+    metus.</p>
+
+</body>
+</html>

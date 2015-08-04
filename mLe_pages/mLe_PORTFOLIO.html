@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="../css/mLeSTYLE.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../css/mobile.css">    
 
-    <!-- trying to set up small thumbnails below full image in fancybox, http://jsfiddle.net/kevin11189/uZCC6/1270/ -->
-    <script src="../js/fancybox.js" type="text/javascript"></script>
-
     <!-- Add fancybox CSS -->
     <link rel="stylesheet" href="../css/fancyboxCSS.css" type="text/css" media="screen" />
 
@@ -23,6 +20,9 @@
     <!-- Add jQuery library -->
     <script type="text/javascript" src="../assets/fancybox_source/lib/jquery-1.10.1.min.js"></script>
 
+    <!-- trying to set up small thumbnails below full image in fancybox, http://jsfiddle.net/kevin11189/uZCC6/1270/ -->
+    <script src="../js/fancybox.js" type="text/javascript"></script>
+    
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="../assets/fancybox_source/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -42,9 +42,7 @@
     
     <!--for mobile scripts-->
     <script src="../js/mobile.js" type="text/javascript"></script>    
-    
-    <!--for responsive portfolio scripts-->
-    <script src="../js/portfolio.js" type="text/javascript"></script>
+
     
 <title>m.L.e. PORTFOLIO</title>
 </head>
@@ -63,6 +61,22 @@
         });
     });
 </script>
+<!--http://stackoverflow.com/questions/10439382/change-img-src-in-responsive-designs-->    
+<script>
+function resizeImages() {
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    $(".single-thumb img").each(function() {
+        var oldSrc = $(this).attr('src');
+        if (width >= 480) {
+            var newSrc = oldSrc.replace('_thumb50x50.','_thumb200x200.');
+            var newWidth = 200;  var newHeight = 200;
+        }
+        $(this).attr('src',newSrc);
+        $(this).attr('width',newWidth);
+        $(this).attr('height',newHeight);
+    });
+}
+</script>    
 
 <div id="masthead">
     <img src="../assets/mLe_GIFnoLoop.gif" alt="m.L.e. DESIGNS">

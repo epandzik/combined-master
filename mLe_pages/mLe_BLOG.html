@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../css/easyLB.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" href="../js/easyLB.js"></script>
+    <script type="text/javascript" href="../js/LBscript.js"></script>
+    <script type="text/javascript" href="../js/js_library/jquery.1.4.2.js"></script>
+    <script type="text/javascript" href="../js/js_library/jquery.lightbox.js"></script>
+    <script type="text/javascript" href="../js/LBscript.js"></script>
     
-    <script type="text/javascript" href="../js/jquery.lightbox-0.5.min.js"></script>
     
 <title>m.L.e. BLOG</title>
 </head>
@@ -22,16 +24,7 @@
   <source src="../video/ban.ogg" type='video/ogg; codecs="theora, vorbis"' />
 </video>
 </div>
-<a id="show-panel" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png">Show Panel</a>
-<div id="lightbox-panel">
-<h2>Lightbox Panel</h2>
-You can add any valid content here.
-<p align="center"><a id="close-panel" href="#">Close this window</a></p>
 
-</div>
-<!-- /lightbox-panel -->
-<div id="lightbox"></div>
-<!-- /lightbox -->
 <h1>HubSpot Email Hack</h1>
 <h2>08.03.2015</h2>    
 <p>This came up earlier last month, but I thought I should share the solution. There are a variety of sites that provide all-in-one marketing software. It brings together various SEO, social media and blogging strategies. It lets you tailor your website for generating leads and create workflows that will convert those leads to sales.</p>
@@ -41,16 +34,22 @@ You can add any valid content here.
 <p>Next morning I’m much less frustrated, back at work with a higher level of sleep and well-caffeinated. I call in again and am referred to the various FAQs (<a href="http://help.hubspot.com/articles/KCS_Article/Email/Why-do-emails-look-different-in-Outlook">Why do emails look different in Outlook?, </a><a href="http://help.hubspot.com/articles/KCS_Article/Why-is-the-spacing-different-in-Outlook-versus-other-email-clients">Why is the spacing different in Outlook vs other email clients?</a> and <a href="http://help.hubspot.com/articles/KCS_Article/Why-are-margins-and-padding-around-my-image-not-rendering-in-Outlook">Why are margins and padding around my image not rendering in Outlook?</a>) describing how HubSpot can’t control how Outlook renders its emails. Now, having already had this conversation with my boss, I know that that "it can't" is not an acceptable answer.</p>
 <p>So I go through the FAQs and find that there is one <a href="https://www.campaignmonitor.com/css/">link</a> on one of the pages that refers me to Various Styling on Web Client. I find a lovely table that confirms, yes — Outlook destroys styling. Basically I can use tables and margins. That’s it.</p>
 <p>I go back to the drawing board (rather the Template Builder on HubSpot) and make each of the modules into tables rather than inserting the image into the text and styling the text separately. Again, the Preview looks great. So I send it through Litmus and have an even more macabre pile of versions in Outlook.</p>
-<div id="lb_images">  
-<a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg" width="50" height="50"  border="0" /></a>
-    
-<a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002_50x50.jpg" width="50" height="50"  border="0" /></a>
-    
-<a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003_50x50.jpg" width="50" height="50"  border="0" /></a>
-    
-<a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007_50x50.jpg" width="50" height="50"  border="0" /></a>
+<div id="LBimages">    
+    <ul>
+        <li>
+            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg" width="50" height="50"  border="0" /></a>
+        </li>
+        <li>
+            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002_50x50.jpg" width="50" height="50"  border="0" /></a>
+        </li>
+        <li>
+            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003_50x50.jpg" width="50" height="50"  border="0" /></a>
+        </li>
+        <li>
+            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007_50x50.jpg" width="50" height="50"  border="0" /></a>
+        </li>
+    </ul>
 </div>  
-
 <!--<a src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg"><div class="backdrop"></div>    
 <div class="box"><div class="close">X</div><img class="lightbox" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" alt="Outlook 2000" /></a>
     

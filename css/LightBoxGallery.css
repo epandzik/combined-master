@@ -1,4 +1,8 @@
 /*Tony Lea simple jQuery Lightbox*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
 
 .backdrop {
     position: absolute;

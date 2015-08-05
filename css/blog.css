@@ -6,7 +6,10 @@ http://codepen.io/SahAssar/pen/YPWxWX
 
 @media only screen and (max-device-width: 480px) {
     #header video{
-        background-color: black;
+        visibility: hidden;
+    }
+    #header #overlay {
+        background-color: #000;
     }
 }
 

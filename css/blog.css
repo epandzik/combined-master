@@ -3,9 +3,10 @@ http://commons.oreilly.com/wiki/index.php/SVG_Essentials/Clipping_and_Masking
 http://www.techrepublic.com/blog/web-designer/how-to-use-the-css-clip-and-mask-properties/
 http://codepen.io/SahAssar/pen/YPWxWX
 */
+
 @media only screen and (max-device-width: 480px) {
-    #header {
-        display: none;
+    #header video{
+        background-color: black;
     }
 }
 
@@ -33,7 +34,7 @@ video {
 h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    color: #000000;
+    color: #000;
     font-size: 1.75em;
     padding-left: 6.82%;
     padding-right: 15.91%;
@@ -42,7 +43,8 @@ h1 {
 h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    color: #000000;
+    color: #000;
+    text-align: right;
     font-size: 1.5em;
     padding-left: 6.82%;
     padding-right: 15.91%;
@@ -51,7 +53,7 @@ h2 {
 h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    color: #000000;
+    color: #000;
     font-size: 1.25em;
     padding-left: 6.82%;
     padding-right: 15.91%;
@@ -64,4 +66,20 @@ p {
     padding-right: 15.91%;
     padding-bottom: 1.705%;
     font-size: 1em;
+}
+
+/* unvisited and visited links */
+a:link,
+a:visited {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #e0150f;
+}
+
+/* mouse over and selected links */
+a:hover,
+a:active {
+    text-style: bold;
+    font-family: "Open Sans", sans-serif;
+    color: #bbb;
 }

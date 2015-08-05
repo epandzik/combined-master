@@ -88,6 +88,22 @@ nav {
     z-index:500;
 }
 
+/* unvisited and visited links */
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    font-family: "Gentium Book Basic", serif;
+    color: #000;
+}
+
+/* mouse over and selected links */
+nav a:hover,
+nav a:active {
+    text-style: bold;
+    font-family: "Gentium Book Basic", serif;
+    color: #e0150f;
+}
+
 .nav-placeholder {
     margin: 0;
     border: 1px solid #fff;
@@ -152,7 +168,7 @@ a:link,
 a:visited {
     text-decoration: none;
     font-family: "Gentium Book Basic", serif;
-    color: #000;
+    color: #e0150f;
 }
 
 /* mouse over and selected links */
@@ -160,5 +176,5 @@ a:hover,
 a:active {
     text-style: bold;
     font-family: "Gentium Book Basic", serif;
-    color: #e0150f;
+    color: #bbb;
 }

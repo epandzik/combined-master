@@ -1,47 +1,20 @@
 <!DOCTYPE html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/blog.css">
-
+    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/LightBoxGallery.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    
-    <script src="../js/fancybox.js" type="text/javascript"></script>
-
-    <!-- Add fancybox CSS -->
-    <link rel="stylesheet" href="../css/fancyboxCSS.css" type="text/css" media="screen" />
-
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery1.8.3.js"></script>
-
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery-1.10.1.min.js"></script>
-
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="../assets/fancybox_source/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="../assets/fancybox_source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-buttons.js"></script>
-
-    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" href="../js/LightBoxGallery.js"></script>
     
 <title>m.L.e. BLOG</title>
 </head>
 <body>
 <div id="header">
-    <a href="../index.html"><img src="../assets/ImageLibrary/mLeLogo.svg" alt="m.L.e. DESIGNS" style="position:absolute;right:2%;top:1%;width:10%;height:auto;float:right;z-index:50;"></a>
-
+<a href="../index.html"><img src="../assets/ImageLibrary/mLeLogo.svg" alt="m.L.e. DESIGNS" style="position:absolute;right:2%;top:1%;width:10%;height:auto;float:right;z-index:50;"></a>
 <img id="overlay" src="../assets/ImageLibrary/blogHeadMask.svg" alt="Emily's Blog">  
-      
 <video style="width:100%;height:auto;" autoplay loop>
 <!--  <source src="../video/ban.mp4" type='video/mp4' />-->
   <source src="../video/ban.ogg" type='video/ogg; codecs="theora, vorbis"' />
@@ -49,7 +22,7 @@
 </div>
 
 <h1>HubSpot Email Hack</h1>
-<h2 style="text-align: right;">08.03.2015</h2>    
+<h2>08.03.2015</h2>    
 <p>This came up earlier last month, but I thought I should share the solution. There are a variety of sites that provide all-in-one marketing software. It brings together various SEO, social media and blogging strategies. It lets you tailor your website for generating leads and create workflows that will convert those leads to sales.</p>
 <p>I work with HubSpot at my job to maintain their leads and workflows. One problem with this site is that it lets the user create email templates that should follow their own design and branding. Now — this isn’t the problem. The real problem is Outlook. And it’s lack of many styling cues present in most other email clients.</p>
 <p>I was put on a project for my company trying to make an email that would be part of our new product roll-out. So on a fine Tuesday morning, I jumped into my first HubSpot experience. I started using their Template Builder since I figured that it would be the smoothest experience with their software. Mostly that’s correct. Set it up, looks great in their preview and in most email clients. The issue came in when I used their Litmus test to preview the email in various Outlook versions. As you can see, the layout gets pretty jagged from what I wanted to see.</p>
@@ -57,53 +30,56 @@
 <p>Next morning I’m much less frustrated, back at work with a higher level of sleep and well-caffeinated. I call in again and am referred to the various FAQs (<a href="http://help.hubspot.com/articles/KCS_Article/Email/Why-do-emails-look-different-in-Outlook">Why do emails look different in Outlook?, </a><a href="http://help.hubspot.com/articles/KCS_Article/Why-is-the-spacing-different-in-Outlook-versus-other-email-clients">Why is the spacing different in Outlook vs other email clients? and </a><a href="http://help.hubspot.com/articles/KCS_Article/Why-are-margins-and-padding-around-my-image-not-rendering-in-Outlook">Why are margins and padding around my image not rendering in Outlook?</a>) describing how HubSpot can’t control how Outlook renders its emails. Now, having already had this conversation with my boss, I know that that "it can't" is not an acceptable answer.</p>
 <p>So I go through the FAQs and find that there is one <a href="https://www.campaignmonitor.com/css/">link</a> on one of the pages that refers me to Various Styling on Web Client. I find a lovely table that confirms, yes — Outlook destroys styling. Basically I can use tables and margins. That’s it.</p>
 <p>I go back to the drawing board (rather the Template Builder on HubSpot) and make each of the modules into tables rather than inserting the image into the text and styling the text separately. Again, the Preview looks great. So I send it through Litmus and have an even more macabre pile of versions in Outlook.</p>
-<div id="thumbsContainer">    
-    <div id="alignRow1">
-        <div class="visible">
-            <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2000" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2000.png">
-                        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2013thumb.png" alt="Outlook 2000" /></a>
-            </div>
-        </div>    
-            <div class="hidden">
-                <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2002" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2002.png">
-                        <img src="#" alt="Outlook 2002" /></a>
-                </div>
-            </div>
-            <div class="hidden">
-                <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2003" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2003.png">
-                        <img src="#" alt="Outlook 2003" /></a>
-                </div>
-            </div>
-            <div class="hidden">
-                <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2007" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2007.png">
-                        <img src="#" alt="Outlook 2007" /></a>
-                </div>
-            </div>
-            <div class="hidden">
-                <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2010" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2010.png">
-                        <img src="#" alt="Outlook 2010" /></a>
-                </div>
-            </div>
-            <div class="hidden">
-                <div class="single-thumb">
-                    <a class="fancybox" rel="group" title="Outlook 2013" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest07102015_code/Outlook2013.png">
-                        <img src="#" alt="Outlook 2013" /></a>
-                </div>
-            </div>
-    </div>
-</div>    
+<ul>    
+    <li>
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg" data-large="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" alt="Outlook 2000" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2000</h5>
+        </div>
+    </li>
+    <li>
+        <a title="Outlook 2002" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002.png">
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002_50x50.jpg" alt="Outlook 2002" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2002</h5>
+        </div>            
+    </li>
+    <li>
+        <a title="Outlook 2003" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003.png">
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003_50x50.jpg" alt="Outlook 2003" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2003</h5>
+        </div>               
+    </li>
+    <li>
+        <a title="Outlook 2007" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007.png">
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007_50x50.jpg" alt="Outlook 2007" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2007</h5>
+        </div>            
+    </li>
+    <li>
+        <a title="Outlook 2010" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2010.png">
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2010_50x50.jpg" alt="Outlook 2010" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2010</h5>
+        </div>            
+    </li>
+    <li>
+        <a title="Outlook 2013" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2013.png">
+        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2013_50x50.jpg" alt="Outlook 2013" />
+        <div class="img_title">
+            <h5 class="title">Outlook 2013</h5>
+        </div>            
+    </li>
+</ul>    
 <p>At this point, I’m just about ready to slap my computer and call it names. But I take a tour of the office and think about anything but this for a few minutes. Blanking out my brains sometimes allows ideas to float up, and this was one of those times.</p>
 <p>I get rid of their many modules and make one table in one module. This actually works! A bit more styling (and editing) also fixes my mobile issue.</p>
     
     
     
 <h1>My blog...</h1>
-<h2 style="text-align: right;">07.29.2015</h2>    
+<h2>07.29.2015</h2>    
 <p>Some of this is personal projects I've been working on, like art or DIY home pieces or other bits.</p>
 <p>Some of these are problems I've come across while learning to code, or while trouble-shooting with the various pieces of the web I interact with.</p>
 <p>Occasionally you'll find ramblings, ventings or links to events/articles/neat-o things.</p>

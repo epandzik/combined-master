@@ -1,19 +1,46 @@
 <!DOCTYPE html>
+<html>
 <head lang="en">
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../css/blog.css">
-    <link rel="stylesheet" type="text/css" href="../css/easyLB.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" href="../js/LBscript.js"></script>
-    <script type="text/javascript" href="../js/js_library/jquery.1.4.2.js"></script>
-    <script type="text/javascript" href="../js/js_library/jquery.lightbox.js"></script>
-    <script type="text/javascript" href="../js/LBscript.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Add my CSS -->
+    <link rel="stylesheet" href="../css/mLeSTYLE.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/blog.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">    
+
+    <!-- Add fancybox CSS -->
+    <link rel="stylesheet" href="../css/fancyboxCSS.css" type="text/css" media="screen" />
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery1.8.3.js"></script>
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery-1.10.1.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="../assets/fancybox_source/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="../assets/fancybox_source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/jquery.fancybox.pack.js"></script>
+
+    <!-- trying to set up small thumbnails below full image in fancybox, http://jsfiddle.net/kevin11189/uZCC6/1270/ -->
+    <script src="../js/fancybox.js" type="text/javascript"></script>
     
-    
-<title>m.L.e. BLOG</title>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-buttons.js"></script>
+    <link rel="stylesheet" href="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../assets/fancybox_source/helpers/jquery.fancybox-thumbs.js"></script>
+
+    <!--script for sticky nav bar-->
+    <script type="text/javascript" src="../js/mLeSticky.js"></script>
+    <script src="../js/mobile.js" type="text/javascript"></script>
+<title>emily's blog</title>
 </head>
 <body>
 <div id="header">
@@ -26,7 +53,7 @@
 </div>
 
 <h1>HubSpot Email Hack</h1>
-<h2>08.03.2015</h2>    
+<h2>08.03.2015</h2> 
 <p>This came up earlier last month, but I thought I should share the solution. There are a variety of sites that provide all-in-one marketing software. It brings together various SEO, social media and blogging strategies. It lets you tailor your website for generating leads and create workflows that will convert those leads to sales.</p>
 <p>I work with HubSpot at my job to maintain their leads and workflows. One problem with this site is that it lets the user create email templates that should follow their own design and branding. Now — this isn’t the problem. The real problem is Outlook. And it’s lack of many styling cues present in most other email clients.</p>
 <p>I was put on a project for my company trying to make an email that would be part of our new product roll-out. So on a fine Tuesday morning, I jumped into my first HubSpot experience. I started using their Template Builder since I figured that it would be the smoothest experience with their software. Mostly that’s correct. Set it up, looks great in their preview and in most email clients. The issue came in when I used their Litmus test to preview the email in various Outlook versions. As you can see, the layout gets pretty jagged from what I wanted to see.</p>
@@ -34,52 +61,184 @@
 <p>Next morning I’m much less frustrated, back at work with a higher level of sleep and well-caffeinated. I call in again and am referred to the various FAQs (<a href="http://help.hubspot.com/articles/KCS_Article/Email/Why-do-emails-look-different-in-Outlook">Why do emails look different in Outlook?, </a><a href="http://help.hubspot.com/articles/KCS_Article/Why-is-the-spacing-different-in-Outlook-versus-other-email-clients">Why is the spacing different in Outlook vs other email clients?</a> and <a href="http://help.hubspot.com/articles/KCS_Article/Why-are-margins-and-padding-around-my-image-not-rendering-in-Outlook">Why are margins and padding around my image not rendering in Outlook?</a>) describing how HubSpot can’t control how Outlook renders its emails. Now, having already had this conversation with my boss, I know that that "it can't" is not an acceptable answer.</p>
 <p>So I go through the FAQs and find that there is one <a href="https://www.campaignmonitor.com/css/">link</a> on one of the pages that refers me to Various Styling on Web Client. I find a lovely table that confirms, yes — Outlook destroys styling. Basically I can use tables and margins. That’s it.</p>
 <p>I go back to the drawing board (rather the Template Builder on HubSpot) and make each of the modules into tables rather than inserting the image into the text and styling the text separately. Again, the Preview looks great. So I send it through Litmus and have an even more macabre pile of versions in Outlook.</p>
-<div id="LBimages">    
-    <ul>
-        <li>
-            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg" width="50" height="50"  border="0" /></a>
-        </li>
-        <li>
-            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002_50x50.jpg" width="50" height="50"  border="0" /></a>
-        </li>
-        <li>
-            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003_50x50.jpg" width="50" height="50"  border="0" /></a>
-        </li>
-        <li>
-            <a href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007.png" class="lightbox"><img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007_50x50.jpg" width="50" height="50"  border="0" /></a>
-        </li>
-    </ul>
-</div>  
-<!--<a src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000_50x50.jpg"><div class="backdrop"></div>    
-<div class="box"><div class="close">X</div><img class="lightbox" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2000.png" alt="Outlook 2000" /></a>
-    
-
-        <a title="Outlook 2002" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002.png">
-        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2002_50x50.jpg" alt="Outlook 2002" />            </a>  
-
-        <a title="Outlook 2003" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003.png">
-        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2003_50x50.jpg" alt="Outlook 2003" />            </a>  
-
-        <a title="Outlook 2007" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007.png">
-        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2007_50x50.jpg" alt="Outlook 2007" />            </a>  
-
-        <a title="Outlook 2010" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2010.png">
-        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2010_50x50.jpg" alt="Outlook 2010" />            </a>  
-
-        <a title="Outlook 2013" href="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2013.png">
-        <img src="../assets/ImageLibrary/HubSpot_Blog/AnalyzeTest_code/Outlook2013_50x50.jpg" alt="Outlook 2013" />
-            </a>
-    </div>-->
-            
-<p>At this point, I’m just about ready to slap my computer and call it names. But I take a tour of the office and think about anything but this for a few minutes. Blanking out my brains sometimes allows ideas to float up, and this was one of those times.</p>
-<p>I get rid of their many modules and make one table in one module. This actually works! A bit more styling (and editing) also fixes my mobile issue.</p>
-    
-    
-    
-<h1>My blog...</h1>
-<h2>07.29.2015</h2>    
-<p>Some of this is personal projects I've been working on, like art or DIY home pieces or other bits.</p>
-<p>Some of these are problems I've come across while learning to code, or while trouble-shooting with the various pieces of the web I interact with.</p>
-<p>Occasionally you'll find ramblings, ventings or links to events/articles/neat-o things.</p>
-<p>I reserve the right to put whatever I'd like on here, since (in theory) it is my blog.</p>
+<div id="thumbsContainer">    
+    <div id="alignRow1">
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Cover illustrating the feature of the magazine." href="../assets/ImageLibrary/FullSize/cellCover1.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/cellCover1_thumb200x200.jpg" alt="Cell Magazine Cover" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Cover illustrating the feature of the magazine." href="../assets/ImageLibrary/FullSize/cellCover2.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/cellCover2_thumb200x200.jpg" alt="Cell Magazine Cover 2"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Photograph showing the package and it's contents." href="../assets/ImageLibrary/FullSize/fafFull.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafFull_thumb200x200.jpg" alt="Fix-A-Flat, full" /></a>
+            </div>         
+        </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Shows the exterior of the package." href="../assets/ImageLibrary/FullSize/fafOuter.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafOuter_thumb200x200.jpg" alt="Fix-A-Flat, outer"/></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Close up of the typography of the package." href="../assets/ImageLibrary/FullSize/fafTop.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/fafTop_thumb200x200.jpg" alt="Fix-A-Flat, top"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Party invitation, showing it closed as it arrives." href="../assets/ImageLibrary/FullSize/inviteClosed.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/inviteClosed_thumb200x200.jpg" alt="Party Invite, closed"/></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Party invitation after it has been opened." href="../assets/ImageLibrary/FullSize/inviteShadow.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/inviteShadow_thumb200x200.jpg" alt="Party Invite, open and casting shadow"/></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show 2008 poster." href="../assets/ImageLibrary/FullSize/pbsPoster.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsPoster_thumb200x200.jpg" alt="2008 Poster"/></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show 2009 Save the Date postcard." href="../assets/ImageLibrary/FullSize/pbsPostcard.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsPostcard_thumb200x200.jpg" alt="2009 Save the Date Postcard"/></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="The Portland Bungalow Show Logo" href="../assets/ImageLibrary/FullSize/pbsLogo.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/pbsLogo_thumb200x200.jpg" alt="Vector Logo"/></a>
+                </div>
+            </div>
+    </div>
+    <div id="alignRow2">
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Active Body and Chiropractic Logo" href="../assets/ImageLibrary/FullSize/abcLogo.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/abcLogo_thumb200x200.jpg" alt="Chiropractic Logo" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                 <a class="fancybox" rel="group" title="Wedding Invitation" href="../assets/ImageLibrary/FullSize/weddinginvite.jpg">
+                     <img src="../assets/ImageLibrary/Thumbs200x200/weddingInvite_thumb200x200.jpg" alt="Wedding Invitation" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Pantone Colors" href="../assets/ImageLibrary/FullSize/ssPMS.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/ssPMS_thumb200x200.jpg" alt="Airline Logo, Color" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Black and White" href="../assets/ImageLibrary/FullSize/ssBW.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssBW_thumb200x200.jpg" alt="Airline Logo, Monochrome" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Airline Logo, Reversed" href="../assets/ImageLibrary/FullSize/ssReversed.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssReversed_thumb200x200.jpg" alt="Airline Logo, Reversed" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Sapphire Sky Home Page" href="../assets/ImageLibrary/FullSize/ssWeb.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/ssWeb_thumb200x200.jpg" alt="Airline Home Page" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Robert Jacobs, OD — Logo" href="../assets/ImageLibrary/FullSize/rjoLogo.jpeg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/rjoLogo200x200.jpg" alt="Developmental Optometry Logo" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Robert Jacobs, OD — Business Card" href="../assets/ImageLibrary/FullSize/rjoBuscard.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/rjoBuscard_thumb200x200.jpg" alt="Developmental Optometry Business Card" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Robert Jacobs, OD — Home Page" href="../assets/ImageLibrary/FullSize/rjoWeb.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/rjoWeb_thumb200x200.jpg" alt="Developmental Optometry Home Page" /></a>
+                </div>
+            </div>
+    </div>
+    <div id="alignRow3">
+        <div class="visible">    
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Oregon Health Sciences University HPV Vaccine Poster" href="../assets/ImageLibrary/FullSize/ohsuPoster.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/ohsuPoster_thumb200x200.jpg" alt="OHSU Vaccine Poster" /></a>
+            </div>
+        </div>
+        <div class="minMargin"></div>        
+        <div class="visible">
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Book Design Series, All Pieces" href="../assets/ImageLibrary/FullSize/seriesAll.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/seriesAll_thumb200x200.jpg" alt="Book Series, All Pieces" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Book Design Series, Book Box" href="../assets/ImageLibrary/FullSize/seriesBox.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/seriesBox_thumb200x200.jpg" alt="Book Series, Box" /></a>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Book Design Series, Macro of Owl" href="../assets/ImageLibrary/FullSize/seriesOwl.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/seriesOwl_thumb200x200.jpg" alt="Book Series, Close-Up" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="SMYRC Poster" href="../assets/ImageLibrary/FullSize/smyrc.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/smyrc_thumb200x200.jpg" alt="Non-Profit PR Poster, All" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="SMYRC Poster, Close-Up" href="../assets/ImageLibrary/FullSize/smyrcAll.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/smyrcAll_thumb200x200.jpg" alt="Non-Profit PR Poster, Close-Up" /></a>
+                </div>
+            </div>
+        <div class="minMargin"></div>        
+        <div class="visible">        
+            <div class="single-thumb">
+                <a class="fancybox" rel="group" title="Futura Type Poster, Close-Up" href="../assets/ImageLibrary/FullSize/typeSpiral.jpg">
+                    <img src="../assets/ImageLibrary/Thumbs200x200/typeSpiral_thumb200x200.jpg" alt="Futura Type Poster, Close-Up" /></a>
+            </div>
+        </div>    
+            <div class="hidden">
+                <div class="single-thumb">
+                    <a class="fancybox" rel="group" title="Futura Type Poster" href="../assets/ImageLibrary/FullSize/typePoster.jpg">
+                        <img src="../assets/ImageLibrary/Thumbs200x200/typePoster_thumb200x200.jpg" alt="Futura Type Poster" /></a>
+                </div>
+        </div>
+    </div>
+</div>    
 </body>
+</html>

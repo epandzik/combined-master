@@ -5,8 +5,11 @@ http://codepen.io/SahAssar/pen/YPWxWX
 */
 
 @media only screen and (max-device-width: 480px) {
+    #header {
+        background-color: #000;
+    }
     #header video{
-        background-color: black;
+        opacity: 0;
     }
 }
 

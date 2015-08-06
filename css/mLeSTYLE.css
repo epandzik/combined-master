@@ -155,6 +155,15 @@ nav a:active {
     min-width: 1.705%;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .visible img {
+        float: left;
+        max-width: 25px;
+        height: auto;
+        padding: 1.705%;
+    }
+}
+
 /*classes for portfolio thumbnail image resizing*/
 .visible img {
     width: 100%;
